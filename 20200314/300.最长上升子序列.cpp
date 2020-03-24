@@ -20,7 +20,7 @@
 #include <vector>
 using namespace std;
 
-// 1.动态规划
+// 1.动态规划 res数组为dp[]数组
 class Solution {
 public:
     int lengthOfLIS(vector<int>& nums) {
@@ -35,10 +35,10 @@ public:
             {
                 if (nums[i]>nums[j])
                 {
-                    res[i]=max(res[i],res[j]+1);
+                    res[i]=max(res[i],res[j]+1);  //动态规划核心
                 }
             }
-            if (res[i]>max_size)
+            if (res[i]>max_size) //打擂台找最大值
             {
                 max_size=res[i];
                 // cout << max_size << "," ;
