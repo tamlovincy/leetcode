@@ -52,5 +52,7 @@ https://leetcode-cn.com/problemset/2020-03/
 * 20200325：[三维形体的表面积](https://github.com/tamlovincy/leetcode/blob/master/20200325/892.%E4%B8%89%E7%BB%B4%E5%BD%A2%E4%BD%93%E7%9A%84%E8%A1%A8%E9%9D%A2%E7%A7%AF.cpp)
 
 * 20200326：[车的可用捕获量](https://github.com/tamlovincy/leetcode/blob/master/20200326/999.%E8%BD%A6%E7%9A%84%E5%8F%AF%E7%94%A8%E6%8D%95%E8%8E%B7%E9%87%8F.cpp)
+
+* 20200327：[卡牌分组-最大公约数](https://github.com/tamlovincy/leetcode/blob/master/20200327/914.%E5%8D%A1%E7%89%8C%E5%88%86%E7%BB%84.cpp)
 ------
 
