@@ -27,7 +27,7 @@
 using namespace std;
 
 class Automaton {
-    string state = "start";
+    string state = "start"; //状态机
     unordered_map<string, vector<string>> table = {
         {"start", {"start", "signed", "in_number", "end"}},
         {"signed", {"end", "end", "in_number", "end"}},
