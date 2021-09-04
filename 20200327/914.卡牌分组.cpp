@@ -80,6 +80,7 @@ public:
         while (iter!=res.end())
         {
             gcd_val=gcd(gcd_val,iter->second);
+            if (gcd_val==1) return false;
             iter++;
         }
         if (gcd_val==1) return false;

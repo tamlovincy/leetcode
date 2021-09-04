@@ -26,7 +26,7 @@
 #include<vector>
 #include<unordered_map>
 using namespace std;
-
+//哈希表
 class Solution {
 public:
     vector<int> singleNumbers(vector<int>& nums) {
@@ -41,6 +41,26 @@ public:
             if (iter->second!=2) res.push_back(iter->first);
         }
         return res;
+    }
+};
+
+//位运算
+class Solution_ {
+public:
+    vector<int> singleNumbers(vector<int>& nums) {
+        int ret = 0;
+        for (int n : nums)
+            ret ^= n;
+        int div = 1;
+        while ((div & ret) == 0)
+            div <<= 1;
+        int a = 0, b = 0;
+        for (int n : nums)
+            if (div & n)
+                a ^= n;
+            else
+                b ^= n;
+        return vector<int>{a, b};
     }
 };
 
